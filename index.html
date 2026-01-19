@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de Estimulación Cognitiva – Liliana</title>
+    <meta name="description"
+        content="Taller de estimulación cognitiva para adultos mayores en Palermo (CABA). Mantené tu mente activa y tu autonomía, a tu ritmo y sin juicio. Coordinado por Liliana Araujo, Psicóloga Social.">
+    <link rel="canonical" href="https://TU-DOMINIO.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://TU-DOMINIO.com/">
+    <meta property="og:title" content="Taller de Estimulación Cognitiva – Liliana">
+    <meta property="og:description"
+        content="Taller de estimulación cognitiva para adultos mayores en Palermo (CABA). Mantené tu mente activa y tu autonomía.">
+    <meta property="og:image" content="https://TU-DOMINIO.com/assets/og.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Taller de Estimulación Cognitiva – Liliana">
+    <meta name="twitter:description" content="Taller de estimulación cognitiva para adultos mayores en Palermo (CABA).">
+    <meta name="twitter:image" content="https://TU-DOMINIO.com/assets/og.jpg">
+
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Taller de Estimulación Cognitiva - Liliana",
+      "description": "Taller de estimulación cognitiva para adultos mayores en Palermo. Ejercicios de memoria, atención y autonomía.",
+      "image": "https://TU-DOMINIO.com/assets/liliana/profile.jpeg",
+      "telephone": "+5491164492643",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Palermo",
+        "addressRegion": "CABA",
+        "addressCountry": "AR"
+      },
+      "url": "https://TU-DOMINIO.com/",
+      "sameAs": [
+        "https://www.instagram.com/TU_INSTAGRAM"
+      ],
+      "priceRange": "$$$",
+      "offers": {
+        "@type": "Offer",
+        "price": "70000",
+        "priceCurrency": "ARS",
+        "name": "Taller Mensual"
+      }
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-name">Liliana</span>
+                <span class="logo-sub">Estimulación Cognitiva</span>
+            </div>
+            <a href="https://wa.me/5491164492643" class="btn btn-outline-primary mobile-hidden">
+                <i class="fab fa-whatsapp"></i> Contacto
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container">
+                <div class="user-toggle-container">
+                    <div class="user-toggle">
+                        <button class="toggle-btn active" data-target="adulto" onclick="switchHero('adulto')">Soy
+                            adulto/a mayor</button>
+                        <button class="toggle-btn" data-target="familiar" onclick="switchHero('familiar')">Soy hijo/a o
+                            familiar</button>
+                    </div>
+                </div>
+
+                <h1 id="hero-title" class="hero-title">Mantené tu mente activa y tu autonomía, a tu ritmo y sin juicio.
+                </h1>
+
+                <div id="hero-adulto" class="hero-content active fade-in">
+                    <p class="hero-subtitle">Un espacio cálido en Palermo para ejercitar la memoria y compartir con
+                        pares.
+                        <br><span class="trust-signal">Coordinado por Liliana Araujo (Psicóloga Social). +6 años
+                            coordinando grupos presenciales en Palermo.</span>
+                    </p>
+                    <ul class="hero-bullets">
+                        <li><i class="fas fa-check-circle"></i> Ejercicios prácticos y dinámicos</li>
+                        <li><i class="fas fa-check-circle"></i> A tu ritmo: nadie te apura</li>
+                        <li><i class="fas fa-check-circle"></i> Sin juicio: clima cuidado y amable</li>
+                    </ul>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5491164492643?text=Hola%20Liliana,%20soy%20adulto/a%20mayor.%20%C2%BFQu%C3%A9%20d%C3%ADas/horarios%20hay%20en%20Palermo?%20%C2%BFu%C3%A1l%20es%20el%20valor%20mensual%20y%20c%C3%B3mo%20me%20inscribo?"
+                            class="btn btn-primary btn-lg pulse">
+                            <i class="fab fa-whatsapp"></i> Consultar cupo y horario por WhatsApp
+                        </a>
+                        <p class="microcopy">Te respondemos con días/horarios disponibles y cómo empezar. Sin
+                            compromiso.</p>
+                        <a href="#como-funciona" class="btn btn-secondary btn-lg">Ver cómo funciona</a>
+                    </div>
+                </div>
+
+                <div id="hero-familiar" class="hero-content fade-in" style="display: none;">
+                    <p class="hero-subtitle">Ayudá a tus padres a mantenerse activos mentalmente en un entorno
+                        profesional y afectuoso.
+                        <br><span class="trust-signal">Coordinado por Liliana Araujo (Psicóloga Social). +6 años
+                            coordinando grupos presenciales en Palermo.</span>
+                    </p>
+                    <ul class="hero-bullets">
+                        <li><i class="fas fa-check-circle"></i> Estimulación cognitiva profesional</li>
+                        <li><i class="fas fa-check-circle"></i> Socialización con otras personas</li>
+                        <li><i class="fas fa-check-circle"></i> Seguimiento de asistencia opcional <span
+                                class="tooltip-icon"
+                                title="Si lo pedís, te contamos asistencia y foco trabajado (sin invadir privacidad).">ⓘ</span>
+                        </li>
+                    </ul>
+                    <div class="hero-actions">
+                        <a href="https://wa.me/5491164492643?text=Hola%20Liliana,%20es%20para%20mi%20mam%C3%A1/pap%C3%A1.%20%C2%BFQu%C3%A9%20d%C3%ADas/horarios%20hay?%20%C2%BFC%C3%B3mo%20es%20el%20taller%20y%20c%C3%B3mo%20se%20paga?%20%C2%BFHay%20vacantes?"
+                            class="btn btn-primary btn-lg pulse">
+                            <i class="fab fa-whatsapp"></i> Consultar cupo para mi mamá/papá
+                        </a>
+                        <p class="microcopy">Te respondemos con días/horarios. En un entorno cuidado.
+                        </p>
+                        <a href="#problemas" class="btn btn-secondary btn-lg">Ver beneficios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="problemas" class="problems-section text-center-mobile">
+            <div class="container">
+                <h2 class="section-title">¿Te sentís identificado/a con esto?</h2>
+                <div class="problems-grid">
+                    <div class="problem-card">
+                        <div class="icon-box"><i class="fas fa-search"></i></div>
+                        <p>¿Te cuesta encontrar esa palabra justa en una charla?</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="icon-box"><i class="far fa-calendar-times"></i></div>
+                        <p>¿Te olvidás de fechas importantes o turnos médicos?</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="icon-box"><i class="fas fa-glasses"></i></div>
+                        <p>¿Perdés objetos cotidianos como llaves o anteojos?</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="icon-box"><i class="fas fa-users-slash"></i></div>
+                        <p>¿A veces te aislás por miedo a equivocarte al hablar?</p>
+                    </div>
+                    <div class="problem-card">
+                        <div class="icon-box"><i class="fas fa-brain"></i></div>
+                        <p>¿Sentís que tu mente va más lento que antes?</p>
+                    </div>
+                </div>
+                <div class="problems-footer">
+                    <p class="highlight-text">No estás solo/a. Es normal, y lo mejor es que <strong>se puede
+                            entrenar.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits Section -->
+        <section id="beneficios" class="benefits-section">
+            <div class="container">
+                <div class="benefits-wrapper">
+                    <div class="benefits-image">
+                        <img src="assets/joy-center/foto1.jpeg" alt="Adultos mayores compartiendo en el taller"
+                            width="1200" height="1600" loading="lazy">
+                    </div>
+                    <div class="benefits-content">
+                        <h2 class="section-title" style="text-align: left;">Qué vas a lograr en el taller</h2>
+                        <ul class="benefits-list">
+                            <li><i class="fas fa-check"></i> <strong>Confianza:</strong> Sentite más seguro/a en tu día
+                                a día.</li>
+                            <li><i class="fas fa-check"></i> <strong>Agilidad mental:</strong> Encontrá las palabras más
+                                rápido.</li>
+                            <li><i class="fas fa-check"></i> <strong>Comprensión:</strong> Reite, compartí y entendé
+                                mejor conceptos.</li>
+                            <li><i class="fas fa-check"></i> <strong>Orden:</strong> Organizá mejor tus rutinas y
+                                olvidos.</li>
+                            <li><i class="fas fa-check"></i> <strong>Prevención:</strong> Cuidá tu salud cognitiva
+                                activamente.</li>
+                            <li><i class="fas fa-check"></i> <strong>Bienestar:</strong> Un espacio para vos, sin
+                                presiones.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Differentiation Section -->
+        <section class="differentiation-section">
+            <div class="container">
+                <h2 class="section-title">¿Por qué elegir este taller?</h2>
+                <div class="diff-grid">
+                    <div class="diff-card">
+                        <div class="diff-icon"><i class="fas fa-layer-group"></i></div>
+                        <h3>Estructura y Progresión</h3>
+                        <p>No son ejercicios sueltos. Es un programa pensado para avanzar paso a paso, mes a mes.</p>
+                    </div>
+                    <div class="diff-card">
+                        <div class="diff-icon"><i class="fas fa-user-md"></i></div>
+                        <h3>Guía Profesional</h3>
+                        <p>Coordinado por Liliana Araujo, Psicóloga Social, con experiencia en actividades grupales para
+                            adultos mayores.</p>
+                    </div>
+                    <div class="diff-card">
+                        <div class="diff-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Clima sin Juicio</h3>
+                        <p>Acá nadie te apura. Valoramos el esfuerzo y celebramos cada avance, por pequeño que sea.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology + Stepper -->
+        <section class="method-section">
+            <div class="container">
+                <h2 class="section-title">¿Cómo funciona?</h2>
+                <div class="stepper">
+                    <div class="step">
+                        <div class="step-circle">1</div>
+                        <h3>Consultás</h3>
+                        <p>Me escribís por WhatsApp para ver horarios y cupos disponibles.</p>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-circle">2</div>
+                        <h3>Te inscribís</h3>
+                        <p>Confirmás tu lugar. Es simple y sin trámites complejos.</p>
+                    </div>
+                    <div class="step-line"></div>
+                    <div class="step">
+                        <div class="step-circle">3</div>
+                        <h3>Empezás</h3>
+                        <p>Te sumás al grupo presencial y empezás a ejercitar tu mente.</p>
+                    </div>
+                </div>
+
+                <div class="what-we-do-grid">
+                    <div class="grid-item item-big">
+                        <h3>¿Qué trabajamos?</h3>
+                        <p>Una propuesta integral para el cerebro.</p>
+                    </div>
+                    <div class="grid-item"><span>Atención</span></div>
+                    <div class="grid-item"><span>Memoria</span></div>
+                    <div class="grid-item"><span>Concentración</span></div>
+                    <div class="grid-item"><span>Lenguaje</span></div>
+                    <div class="grid-item"><span>Planificación</span></div>
+                    <div class="grid-item"><span>Flexibilidad</span></div>
+                    <div class="grid-item"><span>Concientización</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Liliana -->
+        <section class="about-section">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-image">
+                        <img src="assets/liliana/profile.jpeg" alt="Liliana, Psicóloga Social" width="767" height="1280"
+                            loading="lazy">
+                    </div>
+                    <div class="about-content">
+                        <h2>Hola, soy Liliana</h2>
+                        <h4 style="color: var(--primary-color);">Psicóloga Social</h4>
+                        <p>Hace más de 6 años coordino grupos de estimulación cognitiva. Mi pasión es crear espacios
+                            donde los adultos mayores se sientan valorados, escuchados y capaces de seguir aprendiendo.
+                        </p>
+                        <p>Creo firmemente que la autonomía se defiende ejercitándola, y que hacerlo en grupo es mucho
+                            más placentero y sanador que hacerlo en soledad. Sentir que lo que hacés es saludable ayuda
+                            a sostener el hábito.</p>
+                        <div class="stats">
+                            <div class="stat-item"><strong>6+</strong> Años de exp.</div>
+                            <div class="stat-item"><strong>2</strong> Sedes</div>
+                            <div class="stat-item"><strong>+Ref.</strong>Centros</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel Locations -->
+        <section class="locations-section">
+            <div class="container">
+                <h2 class="section-title">Nuestras Sedes</h2>
+                <p class="section-subtitle">Espacios cómodos, seguros y accesibles.</p>
+
+                <div class="carousel-container">
+                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div id="location-carousel" class="carousel-track">
+                        <!-- Centro de Juvilados -->
+                        <div class="carousel-slide fade-in">
+                            <img src="assets/joy-center/foto1.jpeg" alt="Centro de Jubilados Participar" width="1200"
+                                height="1600" loading="lazy">
+                            <div class="slide-caption">Centro de Jubilados Participar</div>
+                        </div>
+                        <div class="carousel-slide fade-in" style="display:none;">
+                            <img src="assets/joy-center/foto2.jpeg" alt="Actividad en Centro de Jubilados" width="1200"
+                                height="1600" loading="lazy">
+                            <div class="slide-caption">Centro de Jubilados Participar</div>
+                        </div>
+                        <div class="carousel-slide fade-in" style="display:none;">
+                            <img src="assets/joy-center/foto3.jpeg" alt="Actividad en Centro de Jubilados" width="1200"
+                                height="1600" loading="lazy">
+                            <div class="slide-caption">Centro de Jubilados Participar</div>
+                        </div>
+
+                        <!-- Guadalupe -->
+                        <div class="carousel-slide fade-in" style="display:none;">
+                            <img src="assets/guadalupe/foto1.jpeg" alt="Parroquia Guadalupe" width="1200" height="1600"
+                                loading="lazy">
+                            <div class="slide-caption">Parroquia Guadalupe</div>
+                        </div>
+                        <div class="carousel-slide fade-in" style="display:none;">
+                            <img src="assets/guadalupe/foto2.jpeg" alt="Parroquia Guadalupe Salon" width="1200"
+                                height="1600" loading="lazy">
+                            <div class="slide-caption">Parroquia Guadalupe</div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">Ellos ya se animaron</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Al principio tenía miedo de no poder seguir el ritmo, pero Liliana hace que todo sea fácil y
+                            divertido. Me siento mucho más despierta."</p>
+                        <div class="author">- Marta, 72 años</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Empecé porque me olvidaba cosas y ahora tengo mis propias estrategias para recordar. Además,
+                            el grupo es hermoso."</p>
+                        <div class="author">- Carlos, 68 años</div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Llevo a mi mamá hace 6 meses y el cambio en su ánimo es notable. Vuelve contenta y con
+                            tareas que le gusta hacer."</p>
+                        <div class="author">- Silvina (hija de alumna)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Practical Info -->
+        <section class="info-section">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="far fa-clock"></i>
+                        <h4>Duración</h4>
+                        <p>90 minutos semanales</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Modalidad</h4>
+                        <p>Presencial en Palermo</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Grupos</h4>
+                        <p>Cupos limitados</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Who is this for Section -->
+        <section class="who-section">
+            <div class="container">
+                <div class="who-grid">
+                    <div class="who-col for-you">
+                        <h3>Este taller es para vos si...</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Querés mantener tu mente ágil y activa.</li>
+                            <li><i class="fas fa-check"></i> Buscás un lugar donde compartir con pares.</li>
+                            <li><i class="fas fa-check"></i> Te interesa prevenir olvidos cotidianos.</li>
+                            <li><i class="fas fa-check"></i> Querés pasarla bien mientras ejercitás.</li>
+                        </ul>
+                    </div>
+                    <div class="who-col not-for-you">
+                        <h3>No es para vos si...</h3>
+                        <ul>
+                            <li><i class="fas fa-times"></i> Buscás terapia psicológica individual.</li>
+                            <li><i class="fas fa-times"></i> Necesitás asistencia médica constante.</li>
+                            <li><i class="fas fa-times"></i> Preferís actividades 100% virtuales.</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="ethical-note">Si hay deterioro avanzado o necesidades clínicas específicas, consultanos para
+                    orientarte.</p>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <div class="pricing-card">
+                    <h3>Valor Mensual</h3>
+                    <div class="price">$70.000 <span class="currency">ARS/mes</span></div>
+                    <p class="price-per-session">Equivale a $17.500 por encuentro (4 al mes).</p>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 4 encuentros mensuales</li>
+                        <li><i class="fas fa-check"></i> Material impreso incluido</li>
+                        <li><i class="fas fa-check"></i> Ejercicios para el hogar</li>
+                        <li><i class="fas fa-check"></i> Seguimiento de continuidad</li>
+                    </ul>
+                    <a href="https://wa.me/5491164492643?text=Hola%20Liliana,%20quiero%20inscribirme%20al%20taller."
+                        class="btn btn-primary btn-lg pulse">
+                        <i class="fab fa-whatsapp"></i> Inscribirme ahora
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>¿Es para personas con deterioro avanzado?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-body">
+                            <p>El taller es preventivo. Si hay un diagnóstico avanzado, consultame para evaluar si es el
+                                espacio adecuado.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>¿Tengo que saber usar tecnología?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-body">
+                            <p>No, para nada. La mayoría de los ejercicios son en papel, orales o lúdicos. Usamos
+                                WhatsApp solo para coordinar.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>¿Se recuperan las clases si falto?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-body">
+                            <p>Como el cupo es fijo, la clase no se recupera, pero te envío el material para que lo
+                                hagas en casa y no pierdas el ritmo.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>¿Es terapia psicológica?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-body">
+                            <p>No, es un taller de estimulación cognitiva. Aunque el clima es terapéutico y hace bien al
+                                ánimo, el foco está en ejercitar la mente.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-header">
+                            <h4>¿Me va a dar vergüenza si no me sale algo?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-body">
+                            <p>¡Para nada! Acá venimos a aprender y a equivocarnos. Nadie juzga a nadie, nos reímos
+                                juntos de nuestros olvidos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="final-cta-section">
+            <div class="container">
+                <h2>No esperes a que los olvidos avancen</h2>
+                <p>Los cupos son limitados para mantener la calidad del grupo.</p>
+                <a href="https://wa.me/5491164492643?text=Hola,%20quiero%20reservar%20mi%20lugar."
+                    class="btn btn-white btn-lg">
+                    <i class="fab fa-whatsapp"></i> Reservar mi lugar
+                </a>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-contact-block" style="margin-bottom: 30px;">
+                    <h3>Contacto y Ubicación</h3>
+                    <p><strong>Taller de Estimulación Cognitiva - Liliana</strong></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Palermo, CABA (Buenos Aires)</p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/5491164492643"
+                            style="color: inherit; text-decoration: underline;">+54 9 11 6449-2643</a></p>
+                    <p><em>Clases presenciales - Consultar horarios</em></p>
+                </div>
+                <p>&copy; 2024 Taller Liliana - Estimulación Cognitiva. Palermo, CABA.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    <a href="https://wa.me/5491164492643" class="floating-whatsapp" aria-label="Chat en WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <div class="mobile-sticky-cta">
+        <a href="https://wa.me/5491164492643" class="btn btn-primary btn-block">
+            <i class="fab fa-whatsapp"></i> Consultar cupo y horario
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
